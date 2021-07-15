@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register-MercadoLiebre</title>
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS-->
+    <!--ICO-->
+    <link rel="shortcut icon" href="/img/mercadoico.ico" type="image/x-icon">
+    <!--ICO-->
+    <!--LINK AWESOME-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <!--LINK AWESOME-->
+
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="Logo MercadoLiebre "></a>
+            </div>
+            <div class="form">
+                <form action="/" method="GET">
+                <input class="barra-nav" type="search" name="busquedas" size="23"  placeholder="Busca productos, marcas y más...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+                </form>    
+            </div>       
+            
+        </div>
+        <div class="caja-subtitulo">
+                <h3 class="texto-subtitulo" ><i class="fas fa-hand-holding-usd"></i> Comprar en cuotas y sin tarjeta de credito </h3>
+            </div>
+    <!--barra de navegacion entre paginas-->        
+        <nav class="nav-header">
+            <ul class="botton-right">
+                <li> <a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            
+        
+                <ul class="botton-left">
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis Compras <i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+                <div class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <form action="/" method="GET" class="formulario-register">
+
+            <fieldset>
+                <legend>CREA TU CUENTA</legend>
+                <!--nombre y apellido usuario-->
+                <div class="cajas-form">
+                    <label for="nombre">Nombre y Apellido</label> <br>
+
+                    <input type="text" name="nombre" id="nombre"  placeholder="Nombre y Apellido">
+                </div>
+                
+                <!--id usuario-->
+                <div class="cajas-form">
+                    <label for="usuario">Nombre de Usuari@</label> <br>
+
+                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+                </div>
+
+                <!--Fecha de nacimiento-->
+                    <div class="cajas-form">
+                        <label for="fecha">Fecha de nacimiento</label> <br>
+
+                        <input type="date" name="fecha" id="fecha">
+                    </div>
+
+                <!--Domicilio-->
+                <div class="cajas-form">
+                    <label for="domicilio">Domicilio</label> <br>
+
+                    <input type="text" name="domicilio" id="domicilio">
+            </div>
+            
+                <!--Perfil de comprador o vendedor--> 
+                <div class="cajas-form"><label for="perfil">¿Quieres comprar o vender en MercadoLiebre?</label> <br>
+            <div class="caja-interna-form">       
+                <label for="perfil">Comprar</label>
+
+                <input type="radio" name="perfil" id="perfil" value="comprar" class="comprar-vender" checked>
+
+                <label for="perfil">Vender</label>
+
+                <input type="radio" name="perfil" id="perfil" value="Vender" class="comprar-vender">
+            </div>
+                </div>           
+                <br>
+                
+                <div class="categorias-new-usuario">
+                    <label  for="categorias" class="categorias-interes">Categorías de interés</label> <br>
+                        
+                            <label for="categorias" class="interes-label">
+                                <input type="checkbox" name="categorias" class="interes-input">ELECTRO
+                            </label>
+                            
+                            <br>
+
+                            <label for="categorias" class="interes-label">
+                            <input type="checkbox" name="categorias" class="interes-input">MODA
+                            </label>
+
+                                <br>
+
+                            <label for="categorias" class="interes-label">
+                                <input type="checkbox" name="categorias" class="interes-input">HOGAR
+                            </label>
+                                
+                            <br>
+
+                            <label for="categorias" class="interes-label">
+                                <input type="checkbox" name="categorias" class="interes-input">JUGUETERIA
+                            </label>
+                                
+                                <br>
+
+                            <label for="categorias" class="interes-label"><input type="checkbox" name="categorias" class="interes-input">VIDA SANA</label>
+                </div>
+                <div class="cajas-form">
+                    <label for="foto">Selecciona tu foto de perfil</label> <br>
+                    <input type="file" name="foto-perfil"   accept=".jpg" class="foto-usuario">
+                </div>
+                <div class="cajas-form">
+                    <label for="contraseña">Contraseña</label> <br>
+                    <input type="password"  name="contraseña" placeholder="Contraseña" required>
+                    <br>
+                    <br>
+                    <label for="contraseña">Confirmar contraseña</label> <br>
+                    <input type="password"  name="contraseña" placeholder="Confirma tu contraseña" required>
+                </div><br>
+
+                <div class="button-form">
+                    <button type="submit" class="botones-register">ENVIAR</button> 
+                    <button type="reset" class="botones-register">BORRAR</button>
+                </div>
+                </fieldset>
+        </form>
+    </main>
+    <footer>
+        <footer>
+            <div class="caja-footer">
+            <section class="iconos-footer">
+                <div class="img-countain">
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+                    <h2>Pagá con tarjeta o en efectivo</h2>
+                        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+                
+                
+            </section>
+            <section class="iconos-footer">
+                    <div class="img-countain"><i class="fas fa-archive"></i></div>
+                    <h2> Envío gratis desde $ 2.500</h2> 
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.</p>
+                
+            </section>
+            <section class="iconos-footer">
+                <div class="img-countain"><i class="far fa-paper-plane"></i></div>
+                    <h2> De principio a fin</h2>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.</p>
+                
+            </section>
+        </div>
+            <hr>
+            <section>
+                <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p> 
+            </section>
+        </footer>
+</body>
+</html>

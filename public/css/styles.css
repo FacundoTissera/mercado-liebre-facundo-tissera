@@ -1,0 +1,561 @@
+/* ESTILOS GENERALES*/
+/* 
+● Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+● Tipografías
+Familia: 'Roboto'
+
+● Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#ebebeb;
+    width: 100%;
+}
+
+
+
+/* HEADER */
+header{
+    background-color: #EAC926;
+    width: 100%;
+}
+
+.top-header{
+    display: flex;
+    padding: 6px;
+    
+}
+
+.logo  {
+    width: 50%;
+}
+
+.form {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.barra-nav{
+    width: 79%;
+    height: 25px;
+}
+
+.texto-subtitulo{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: revert;
+}
+
+.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+    
+}
+
+
+.burger-menu{
+    text-align: center;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+a, ul{
+    margin-left: 20px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    
+}
+
+li{
+    display: none;
+
+}
+
+
+/* HEADER */
+
+
+
+/* MAIN */
+main{
+    font-size: 15px;
+    width: 100%;
+}
+
+h2.titulos{
+    font-size: 20px;
+    margin: 0;
+    padding: 13px;
+}
+
+.pruduct_img{
+    
+        width: 80%;
+        text-align: center;
+        background-color: #fff;
+        margin: 10px 45px -2px 45px;
+        box-sizing: border-box;
+    /* height: 50%;
+    width: 80%;
+    padding: 10px 45px 0px 45px ; */
+    
+}
+
+.main-articulo{
+    width: 80%;
+    text-align: center;
+    background-color: #fff;
+    margin: 0px 45px 5px 45px;
+    box-sizing: border-box;
+    
+}
+
+.circ-env {
+    height: 50px;
+    width: 50px;
+    border: 1px solid green;
+    border-radius: 50%;
+    color: green;
+    font-size: 15px;
+}
+
+.precios{
+flex-grow:  0.3; 
+}
+
+.descuentos{
+    color: green;
+    font-weight: bold;
+    flex-grow: 0.8 ;
+}
+
+.descripciones {
+    display:none;
+}
+
+.button-whatsapp{
+    background-color: transparent;
+    position: fixed;
+    right: 11px;
+    bottom: 50px;
+    border: none;
+
+}
+.whatsapp{
+    width: 60px;
+}
+/* MAIN */
+
+
+
+/* FOOTER */
+footer{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.img-countain{
+    font-size: 40px;
+    color: blue;
+}
+
+/* FOOTER */
+
+
+/*REGISTER*/
+.formulario-register{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+}
+fieldset{
+    width: 50%;
+    border-radius: 10px;
+}
+
+legend{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+label{
+    font-weight: bold;
+    
+}
+
+div.cajas-form{
+    margin-top: 15px;
+    text-align: center
+}
+
+input{
+    margin-top: 10px;
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: none ;
+    
+    height: 27px;
+    color:#000000;
+}
+.caja-interna-form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.categorias-interes{
+    margin-left: 16%;
+}
+.categorias-new-usuario{
+    text-align: justify;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.interes-new-usario{
+    text-align: center;
+}
+
+.interes-label{
+    display: flex;
+    align-items: flex-end;
+}
+
+.interes-input{
+    width: 40px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.comprar-vender{
+    width: 20px;
+    text-align: center;
+}
+.foto-usuario{
+    height: 22px;
+    width: 90%;
+}
+button{
+    padding: 2px;
+    margin-right: 10px;
+}
+
+.button-form{
+    text-align: end;
+    margin-right: 30px;
+}
+
+.botones-register{
+    border-radius: 6px;
+    height: 28px;
+    width: 80px;
+    background-color: #ebebeb;
+    color: #0044AA;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.botones-register:hover{
+    background-color: #0044AA;
+    color:#ebebeb ;
+}
+/*REGISTER*/
+
+/*LOGIN*/
+.formulario-login{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.fieldset-login{
+    width: 50%;
+    border-radius: 10px;
+}
+
+.caja-login{
+    width: 140%;
+    margin-left: 5px;
+}
+
+.botton-login{
+    text-align: end;
+    margin:0px 4px 5px 0px  ;
+    
+}
+.botones-login{
+    border-radius: 6px;
+    height: 28px;
+    width: 80px;
+    background-color: #ebebeb;
+    color: #0044AA;
+    font-weight: bold;
+}
+.botones-login:hover{
+    background-color: #0022AA;
+    color: #ebebeb;
+}
+/*LOGIN*/
+
+/*MEDIA PARA MOBILE*/
+@media  (min-width:361px){
+    .pruduct_img, .main-articulo {
+        box-shadow: 1px -1px 10px 0px rgb(100, 100, 100);
+        
+    } 
+    /* .pruduct_img:hover, .main-articulo:hover{
+        box-shadow: none;
+    } */
+    
+    
+    .burger-menu{
+        /* display: none; */
+        display: block;
+    }
+
+
+    }
+/*MEDIA PARA MOBILE*/
+    
+
+/*MEDIA PARA  TABLETS*/
+@media (min-width: 769px){
+    /*HEADER*/
+.logo, .form{
+    width: 30%;
+}
+.form{
+    margin-left: 35px;
+}
+
+    
+    .nav-header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .botton-right {
+        display: flex;
+    }
+    .botton-left{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    li{
+        
+        display: block;
+    }
+    
+    div.burger-menu {
+        display: none;
+    }
+    /*--HEADER*/
+    /*----MAIN*/
+main section article .descripciones{
+    display: none;
+}
+
+main section article:hover .descripciones{
+    display: block;
+}
+
+    /*TITULOS ARTICULOS*/
+    h2.titulos{
+    font-size: 24px;
+    padding: 18px 0px 18px 0px;
+}
+/*TITULOS ARTICULOS*/
+
+/*ARTICULOS VISITADOS*/
+.articulos-visitas1{
+    display: inline-table;
+    width: 45%;
+}
+.articulos-visitas2{
+    display: inline-table;
+        width: 45%;
+        
+}
+    /*ARTICULOS VISITADOS*/
+    
+    /*ARTICULOS EN OFERTAS*/
+.productos-ofertas-linea1{
+        
+        display: inline-table;
+        width: 45%;
+}
+
+.productos-ofertas-linea2{
+        
+        display: inline-table;
+        width: 45%;
+} 
+    /*ARTICULOS EN OFERTAS*/
+    
+    
+    /*IMAGINES PRODUCTOS PAGINA*/
+.pruduct_img{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+}
+    /*IMAGINES PRODUCTOS PAGINA*/
+    /*---MAIN*/
+    /*------FOOTER*/
+
+    /*------FOOTER*/
+.caja-footer{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+    }
+.iconos-footer{
+    width: 30%;
+    }
+
+.img-countain:hover{
+    color: #EAC926;
+}
+    /*---REGISTER----*/
+.categorias-interes{
+    margin-left: 30%;
+}
+    /*---REGISTER----*/
+}
+/*MEDIA PARA  TABLETS*/
+
+/*MEDIA PARA DESKTOP*/
+@media(min-width: 1008px){
+/*HEADER*/
+
+
+.nav-header{
+    display: flex;
+    justify-content: space-around;
+    }
+    .botton-right {
+        display: flex;
+    }
+    .botton-left{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    li{
+        
+        display: block;
+    }
+    
+    div.burger-menu {
+        display: none;
+    }
+/*HEADER*/
+
+
+/*MAIN*/
+
+/*TITULOS ARTICULOS*/
+h2.titulos{
+    font-size: 24px;
+    padding: 18px 0px 18px 0px;
+}
+/*TITULOS ARTICULOS*/
+
+/*ARTICULOS VISITADOS*/
+.articulos-visitas1, .articulos-visitas2{
+    display: inline-table;
+    width:23%;
+}
+.precios, .descuentos{
+    display: inline;
+    padding: 15px;
+}
+.descripciones{
+    margin-top: 15px;
+}
+/*ARTICULOS VISITADOS*/
+    
+/*ARTICULOS EN OFERTAS*/
+.productos-ofertas-linea1, .productos-ofertas-linea2{
+    
+    display: inline-table;
+    width: 23%;
+    
+}
+
+/*ARTICULOS EN OFERTAS*/
+
+
+/*IMAGINES PRODUCTOS PAGINA*/
+.pruduct_img{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*IMAGINES PRODUCTOS PAGINA*/
+
+/*DESCRIPCIONES*/
+.descripciones {
+    display:block;
+    }
+    /*MAIN*/
+    /*---LOGIN---*/
+.fieldset-login{
+    width: 35%;
+}
+/*---LOGIN---*/
+
+/*---REGISTER---*/
+.categorias-interes{
+    margin-left: 40%;
+}
+/*---REGISTER---*/
+/*MEDIA PARA DESKTOP*/
+}
+
+
+
